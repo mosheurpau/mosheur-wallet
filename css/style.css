@@ -1,0 +1,90 @@
+/* added google font  */
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+h2:hover {
+    color: #8A5E3B;
+}
+/* ------------------------
+input filed added style 
+------------------------- */
+.input-filed {
+    padding: 8px 20px;
+    margin: 5px 50px 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-image: linear-gradient(#1F262E, #1F262E);
+    color: white;
+    font-weight: 700;
+}
+.input-label {
+    font-size: 20px;
+    text-align: end;
+    width: 80px;
+    padding: 8px 5px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.input-label:hover {
+    color:#51916B;
+}
+
+
+/* ------------------
+input filed saving
+-------------------- */
+.input-filed-saving {
+    width: 40%;
+    padding: 8px 20px;
+    margin: 8px 5px 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-image: linear-gradient(#1F262E, #1F262E);
+    color: white;
+    font-weight: 700;
+}
+.input-save {
+    font-size: 20px;
+    text-align: end;
+    width: 80px;
+    padding: 8px 5px;
+    font-weight: 700;
+    margin-right: 0px;
+}
+/* -----------
+saving button 
+-------------*/
+.style-btn {
+    background-image: linear-gradient(#1F262E, #1F262E);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    font-weight: 700;
+}
+.style-btn:hover {
+    color: rgb(138,94,59);
+}
+
+/*--------------------
+ perecentage style 
+-------------------- */
+.perecentage {
+    font-size: 20px;
+    padding: 8px 0px;
+    font-weight: 700;
+}
+
+/* --------------------
+wallet icon style 
+--------------------- */
+.icon-style {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 15px;
+}

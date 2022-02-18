@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Wallet</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- heder section  -->
+    <header>
+        <h1 class="text-center mb-3 mt-2 fw-bold">My wallet <span>
+                <img class="icon-style" src="images/wallet-icon.png" alt=""></span>
+        </h1>
+    </header>
+
+    <!-- main section  -->
+    <main>
+        <div class="container mt-2">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col bg-light pt-4">
+                    <img src="images/wallet.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                </div>
+
+                <!-- Income part  -->
+                <div class="col bg-light text-center">
+                    <h2 class="pt-4 fw-bold">Income</h2>
+                    <p><label class="input-label">Income:</label><input id="income-total"
+                            class="w-75 mx-auto input-filed" type="text" placeholder="$ Enter income amount" required>
+                    </p>
+                    <p id="income-error"></p>
+                    <!-- Expenses part -->
+                    <h2 class="pt-1 fw-bold">Expenses</h2>
+                    <p><label class="input-label">Food:</label><input id="food-expenses"
+                            class="w-75 mx-auto input-filed" type="text" placeholder="$ Enter food expenses amount">
+                    </p>
+                    <p id="food-error"></p>
+
+                    <p><label class="input-label">Rent:</label><input id="rent-expenses"
+                            class="w-75 mx-auto input-filed" type="text" placeholder="$ Enter rent expenses amount">
+                    </p>
+                    <p id="rent-error"></p>
+
+                    <p><label class="input-label">Clothes:</label><input id="clothes-expenses"
+                            class="w-75 mx-auto input-filed" type="text" placeholder="$ Enter clothes expenses amount">
+                    </p>
+                    <p id="clothes-error"></p>
+                    <p id="input-error"></p>
+
+                    <!-- Calculate part  -->
+                    <button id="calculate-btn" type="button" class="btn style-btn mt-2 mb-2">Calculate</button>
+                    <h5>Total Expenses: <span id="expenses-total">00</span></h5>
+                    <h5>Balance: <span id="balance-total">00</span></h5>
+                    <p id="balance-error">
+                    </p>
+                    <!-- saving part -->
+                    <div class="mt-2">
+                        <span class="input-save">Save:</span>
+                        <input id="saving-percentage" class="text-center input-filed-saving" type="text"
+                            placeholder="saving percentage">
+                        <span class="perecentage">%</span>
+                        <button id="saving-btn" type="button" class="style-btn btn">Save</button>
+                    </div>
+                    <h5 class="pt-2">Saving Amount: <span id="saving-amount">00</span></h5>
+                    <h5>Remainning Balance: <span id="remainning-balance">00</span></h5>
+                    <p id="saving-error">
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- javaScript link  -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
